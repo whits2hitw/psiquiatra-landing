@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex items-center justify-center px-4 py-12">
+    <section className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex items-center justify-center px-4">
       <div className="max-w-md md:max-w-2xl text-center space-y-6">
         <div className="space-y-2">
           <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide">

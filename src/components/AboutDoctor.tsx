@@ -62,7 +62,7 @@ export const AboutDoctor: React.FC = () => {
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Publicações</h3>
               <p className="text-sm text-gray-700">
-                A vitamina C na esquizofrenia apresenta benefício? Estudo preliminar com análise comportamental em ratos. (J. bras. psiquiatr. 71 (3) • Jul-Sep 2022)
+                A vitamina C na esquizofrenia apresenta benefício? Estudo preliminar com análise comportamental em ratos. <br />(J. bras. psiquiatr. 71 (3) • Jul-Sep 2022)
               </p>
             </div>
           </div>

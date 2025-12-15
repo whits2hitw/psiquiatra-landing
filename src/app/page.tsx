@@ -61,16 +61,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Top Header com localização */}
+      {/* Top Header com localização (agora em fluxo normal acima do hero) */}
       <TopHeader atTop={atTop} />
 
-      {/* Navbar */}
-      <div className="pt-16">
-        <Navbar atTop={atTop} />
-      </div>
+      {/* Navbar fixo no topo (sobrepõe o TopHeader/hero) */}
+      <Navbar atTop={atTop} />
 
       {/* Hero Section */}
-      <div id="hero" className="pt-20">
+      <div id="hero">
         <Hero />
       </div>
 
