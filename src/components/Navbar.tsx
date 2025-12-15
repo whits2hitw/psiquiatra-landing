@@ -30,12 +30,12 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
 
   return (
     <nav
-      className={`fixed ${atTop ? "top-8 md:top-10" : "top-0"} left-0 right-0 z-40 transition-all duration-200 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent shadow-none"
+      className={`fixed top-0 left-0 right-0 ${isScrolled ? "pt-0" : "pt-14"} z-50 transition-all duration-200 ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between h-32">
+        <div className="flex items-center justify-between h-20">
           {/* Logo/Title */}
           <div className="flex-shrink-0">
             <button
@@ -46,8 +46,8 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
                 <Image
                   src="/logo.svg"
                   alt="Logo"
-                  width={220}
-                  height={80}
+                  width={140}
+                  height={45}
                   priority
                   className="object-contain max-h-full"
                 />
@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-gray-800 hover:text-blue-600 font-medium transition"
+                className="cursor-pointer text-gray-800 hover:text-blue-600 font-medium transition"
               >
                 {link.label}
               </button>
@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="transition text-gray-800 hover:text-blue-600"
+              className=" transition text-gray-800 hover:text-blue-600"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
