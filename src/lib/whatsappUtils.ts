@@ -22,5 +22,5 @@ export const DOCTOR_WHATSAPP_NUMBER = "5515997569809"; // Dr. Mario Luiz Watanab
 
 export const defaultWhatsAppLink = generateWhatsAppLink(
   DOCTOR_WHATSAPP_NUMBER,
-  "Prezado Dr. Mario Luiz Watanabe, gostaria de agendar uma consulta psiquiátrica. Fico no aguardo de sua disponibilidade."
+  "Olá! Gostaria de saber sobre disponibilidade para agendar uma consulta."
 );

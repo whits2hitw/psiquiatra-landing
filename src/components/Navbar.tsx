@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-8xl ml-20 mr-4 px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo/Title */}
           <div className="flex-shrink-0">
@@ -46,8 +46,8 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
                 <Image
                   src="/logo.svg"
                   alt="Logo"
-                  width={140}
-                  height={45}
+                  width={180}
+                  height={50}
                   priority
                   className="object-contain max-h-full"
                 />
@@ -56,12 +56,12 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-4">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="cursor-pointer text-gray-800 hover:text-blue-600 font-medium transition"
+                className="cursor-pointer text-gray-900 uppercase font-bold rounded-2xl px-3 py-1 border-none transition-all duration-200 bg-gradient-to-b from-gray-300/20 to-gray-300/5 hover:from-gray-200/60 hover:to-gray-200/30 shadow-sm hover:shadow-md"
               >
                 {link.label}
               </button>
@@ -69,14 +69,16 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className=" transition text-gray-800 hover:text-blue-600"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          {isScrolled && (
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="transition text-gray-800 hover:text-blue-600"
+              >
+                {isOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Mobile Menu */}

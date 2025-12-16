@@ -5,7 +5,7 @@ import React from "react";
 // Seção sobre o médico com informações profissionais
 export const AboutDoctor: React.FC = () => {
   return (
-    <section id="about" className="py-16 bg-gray-50 px-4">
+    <section id="about" className="py-16 bg-gray-200 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-md p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
