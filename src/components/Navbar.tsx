@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="cursor-pointer text-gray-800 hover:text-blue-600 font-medium transition"
+                className="cursor-pointer text-slate-700 hover:text-teal-700 font-medium transition"
               >
                 {link.label}
               </button>
@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className=" transition text-gray-800 hover:text-blue-600"
+              className=" transition text-slate-700 hover:text-teal-700"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -81,12 +81,12 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 pt-2 border-t border-gray-200">
+          <div className="md:hidden pb-4 pt-2 border-t border-slate-200">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition"
+                className="block w-full text-left px-4 py-2 text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition"
               >
                 {link.label}
               </button>

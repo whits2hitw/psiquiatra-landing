@@ -5,7 +5,7 @@ import React from "react";
 // Rodapé com informações legais e de contato
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+    <footer className="bg-slate-900 text-slate-300 py-12 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -38,14 +38,14 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
-          <p className="text-xs text-gray-400 text-center mb-4">
+        <div className="border-t border-slate-800 pt-8">
+          <p className="text-xs text-slate-400 text-center mb-4">
             Este site fornece informações educacionais sobre psiquiatria e não
             substitui o aconselhamento profissional. Consulte um profissional
             qualificado para diagnóstico e tratamento.
           </p>
 
-          <p className="text-center text-xs text-gray-500">
+          <p className="text-center text-xs text-slate-500">
             © 2024 Consultório Psiquiátrico. Todos os direitos reservados.
           </p>
         </div>

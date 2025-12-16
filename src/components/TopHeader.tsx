@@ -12,7 +12,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({ atTop }) => {
   // Now non-fixed: it sits above the hero in the normal document flow.
   // The Navbar is fixed and will overlay it. Keep the prop for compatibility.
   return (
-    <div className="w-full bg-gray-700 text-white h-6 md:h-8 flex items-center justify-center gap-2">
+    <div className="w-full bg-teal-800 text-slate-50 h-6 md:h-8 flex items-center justify-center gap-2">
       <MapPin size={14} />
       <p className="text-xs md:text-sm font-medium">
         Atendimento presencial e online para todo Brasil
