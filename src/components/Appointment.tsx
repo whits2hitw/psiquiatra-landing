@@ -8,13 +8,13 @@ import { defaultWhatsAppLink } from "@/lib/whatsappUtils";
 // Componente de CTA para agendamento
 export const Appointment: React.FC = () => {
   return (
-    <section id="appointment" className="py-16 bg-teal-600 text-white px-4">
+    <section id="appointment" className="py-16 bg-blue-600 text-white px-4">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Agende Sua Consulta Agora
         </h2>
 
-        <p className="text-lg text-teal-100 mb-8">
+        <p className="text-lg text-blue-100 mb-8">
           Oferecemos atendimento online e presencial. Entre em contato para mais
           informações sobre disponibilidade.
         </p>
@@ -24,7 +24,7 @@ export const Appointment: React.FC = () => {
             href={defaultWhatsAppLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-200"
+            className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-200"
           >
             <Image src="/wppIcon.svg" alt="WhatsApp" className="invert" width={24} height={24} />
             Enviar Mensagem
@@ -32,7 +32,7 @@ export const Appointment: React.FC = () => {
 
           <a
             href="tel:+5511999999999"
-            className="inline-flex items-center justify-center gap-2 bg-white text-teal-600 hover:bg-teal-50 font-semibold py-4 px-8 rounded-lg transition duration-200"
+            className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 hover:bg-blue-50 font-semibold py-4 px-8 rounded-lg transition duration-200"
           >
             <Phone size={24} />
             Ligar Agora
