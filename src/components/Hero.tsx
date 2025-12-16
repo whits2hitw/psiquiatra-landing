@@ -12,8 +12,19 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex items-center justify-center px-4">
-      <div className="max-w-md md:max-w-2xl text-center space-y-6">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center px-4">
+      <div
+        className="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: "url('/hero-bg-img.jpg')" }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute left-0 top-0 bottom-0 w-1/3 md:w-1/4 bg-left bg-no-repeat bg-contain z-0 pointer-events-none hidden sm:block"
+        style={{ backgroundImage: "url('/person-img.png')" }}
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-md md:max-w-2xl text-center space-y-6">
         <div className="space-y-2">
           <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide">
             Bem-vindo
