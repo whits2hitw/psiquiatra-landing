@@ -17,7 +17,7 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
     setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView();
     }
   };
 
@@ -40,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
           {/* Logo/Title */}
           <div className="flex-1 flex justify-center md:justify-start">
             <button>
-              <div className="h-full pl-6 md:pl-0 md:ml-0 items-center">
+              <div className="h-full pl-15 md:pl-0 md:ml-0 items-center">
                 <Image
                   src="/logo.svg"
                   alt="Logo"

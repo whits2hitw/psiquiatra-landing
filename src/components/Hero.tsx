@@ -10,7 +10,7 @@ import { onlineWhatsAppLink } from "@/lib/whatsappUtils";
 export const Hero: React.FC = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView();
   };
 
   return (
