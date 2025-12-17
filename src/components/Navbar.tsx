@@ -22,10 +22,11 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
   };
 
   const navLinks = [
+    {label: "Início", id: "hero" },
     { label: "Sobre mim", id: "about" },
     { label: "Especialidades", id: "practice-areas" },
+    {label: "Como Funciona?", id: "HowItWorks" },
     { label: "Agendamento", id: "appointment" },
-    { label: "Contato", id: "contact" },
   ];
 
   return (
@@ -34,13 +35,13 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-8xl ml-20 mr-4 px-4">
+      <div className="max-w-8xl ml-25 mr-5 md:ml-30 md:mr-4 md:px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo/Title */}
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection("hero")}
-              className="hover:opacity-80 transition"
+              className="transition"
             >
               <div className="h-full flex items-center">
                 <Image
@@ -61,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="cursor-pointer text-gray-900 uppercase font-bold rounded-2xl px-3 py-1 border-none transition-all duration-200 bg-gradient-to-b from-gray-300/20 to-gray-300/5 hover:from-gray-200/60 hover:to-gray-200/30 shadow-sm hover:shadow-md"
+                className="cursor-pointer text-gray-900 uppercase font-semibold rounded-2xl px-3 py-1 border-none transition-all duration-200 bg-gradient-to-b from-gray-300/20 to-gray-300/5 hover:from-gray-200/60 hover:to-gray-200/30 shadow-sm hover:shadow-md"
               >
                 {link.label}
               </button>

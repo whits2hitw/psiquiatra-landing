@@ -24,3 +24,12 @@ export const defaultWhatsAppLink = generateWhatsAppLink(
   DOCTOR_WHATSAPP_NUMBER,
   "Olá! Gostaria de saber sobre disponibilidade para agendar uma consulta."
 );
+export const onlineWhatsAppLink = generateWhatsAppLink(
+  DOCTOR_WHATSAPP_NUMBER,
+  "Olá! Gostaria de saber sobre disponibilidade para agendar uma consulta online."
+);
+
+export const inPersonWhatsAppLink = generateWhatsAppLink(
+  DOCTOR_WHATSAPP_NUMBER,
+  "Olá! Gostaria de saber sobre disponibilidade para agendar uma consulta presencial."
+);

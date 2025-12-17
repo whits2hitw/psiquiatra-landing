@@ -10,6 +10,7 @@ import { Appointment } from "@/components/Appointment";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { Footer } from "@/components/Footer";
 import { getUserDevice, type DeviceData } from "@/lib/getUserDevice";
+import { HowItWorks} from "@/components/HowItWorks";
 
 /**
  * Landing Page SPA para Consultório Psiquiátrico
@@ -80,6 +81,10 @@ export default function Home() {
       {/* Practice Areas Section */}
       <div id="practice-areas">
         <PracticeAreas />
+      </div>
+      {/* How It Works Section */}
+      <div id="HowItWorks">
+        <HowItWorks />
       </div>
 
       {/* Appointment Section */}
