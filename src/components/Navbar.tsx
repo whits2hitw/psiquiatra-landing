@@ -35,12 +35,12 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-8xl  mr-5 md:ml-30 md:mr-4 md:px-4">
+      <div className="max-w-8xl  mr-5 md:ml-15 md:mr-4 md:px-4">
         <div className="flex items-center justify-center md:justify-between h-20">
           {/* Logo/Title */}
           <div className="flex-1 flex justify-center md:justify-start">
             <button>
-              <div className="h-full flex  md:ml-0 items-center">
+              <div className="h-full pl-6 md:pl-0 md:ml-0 items-center">
                 <Image
                   src="/logo.svg"
                   alt="Logo"
