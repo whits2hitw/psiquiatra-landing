@@ -31,19 +31,16 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 ${isScrolled ? "pt-0" : "pt-14"} z-50 transition-all duration-200 ${
+      className={`fixed top-0 left-0 right-0 ${isScrolled ? "pt-0" : "pt-14"} z-50 transition-all duration-100 ${
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-8xl ml-25 mr-5 md:ml-30 md:mr-4 md:px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-8xl  mr-5 md:ml-30 md:mr-4 md:px-4">
+        <div className="flex items-center justify-center md:justify-between h-20">
           {/* Logo/Title */}
-          <div className="flex-shrink-0">
-            <button
-              onClick={() => scrollToSection("hero")}
-              className="transition"
-            >
-              <div className="h-full flex items-center">
+          <div className="flex-1 flex justify-center md:justify-start">
+            <button>
+              <div className="h-full flex  md:ml-0 items-center">
                 <Image
                   src="/logo.svg"
                   alt="Logo"
@@ -71,10 +68,10 @@ export const Navbar: React.FC<NavbarProps> = ({ atTop }) => {
 
           {/* Mobile Menu Button */}
           {isScrolled && (
-            <div className="md:hidden">
+            <div className="md:hidden absolute right-2">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="transition text-gray-800 hover:text-blue-600"
+                className="ml-20 transition text-gray-800 hover:text-blue-600"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>

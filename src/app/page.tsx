@@ -54,7 +54,7 @@ export default function Home() {
 
   // Detecta se a página está no topo e compartilha com header/navbar
   useEffect(() => {
-    const handleScroll = () => setAtTop(window.scrollY === 0);
+    const handleScroll = () => setAtTop(window.scrollY <= 0);
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

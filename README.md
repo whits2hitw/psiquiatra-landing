@@ -27,11 +27,12 @@ src/
  └── components/     # Componentes (Hero, About, HowItWorks, PracticeAreas, Appointment, Footer)
  └── app/            # Estrutura Next.js App Router e estilos globais
  public/             # Assets (Imagens do Dr., ícones de redes sociais e cérebro)
+```
 
 🛠️ Como executar o projeto localmente
 Clone o repositório:
 
-git clone git clone https://github.com/whits2hitw/psiquiatra-landing.git
+git clone https://github.com/whits2hitw/psiquiatra-landing.git
 
 Instale as dependências:
 
